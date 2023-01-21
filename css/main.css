@@ -1,0 +1,176 @@
+@import url("normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Roboto&family=Tangerine:wght@400;700&display=swap');
+@import url("blog.css");
+@import url("forms.css");
+a {
+	text-decoration: none;
+}
+
+a:active {
+	color: whitesmoke;
+}
+
+a:hover {
+	color: yellow;
+}
+
+a:visited {
+	color:darkslategrey;
+}
+
+.container {
+
+	display: grid;
+	width: 100%;	
+	grid-template-areas: 
+	"hd"
+	"nav"
+	"main"
+	"ft";
+}
+
+/* Header and nav */
+.header {
+	grid-area: hd;
+}
+.logo {
+	text-align: center;
+}
+.main_nav {
+	width: 100%;
+	grid-area: nav;
+	background-color: #efefef;
+	padding: 1rem;
+	display: flex;
+}
+
+.main_nav ul li {
+	padding-right: 3rem;
+	display: inline;
+	color: whitesmoke;
+	text-align: right;
+}
+.nav_list {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+}
+.nav_list_item {
+	font-family: "Roboto", sans-serif;
+}
+.rounded-circle {
+	border-radius: 50%;
+	width: 50%;
+	height: auto;
+}
+
+h1.main_heading {
+	font-family: 'Tangerine', serif;
+	font-size: 48px;
+	text-align: center;
+}
+
+
+.main_post_img {
+	background-size: contain;
+	width: 80%;
+	height: auto;
+	margin: 1rem auto;
+
+}
+/* Blog post cards */
+.content {
+	grid-area: main;
+	
+}
+.figure_card {
+	margin: 0 auto;
+}
+
+.post_box {
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 25px;
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 75%;
+}
+.red {
+	border: double 7px red;
+
+}
+.orange {
+	border: double 7px orange;
+
+}
+
+.yellow {
+	border: double 7px yellow;
+}
+.green {
+	border: double 7px green;
+
+}
+.blue {
+	border: double 7px blue;
+
+}
+.indigo {
+	border: double 7px indigo;
+
+}
+.violet {
+	border: double 7px violet;
+
+}
+.bp_summary {
+	font-family: "Roboto", sans-serif;
+
+}
+
+.post_title {
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+button.post_button {
+	border-radius: 30px;
+	background-color: whitesmoke;
+	padding: 1rem;
+	margin: 0 auto;
+
+}
+/* Footer */
+.footer {
+	background-color: rgb(21, 21, 21);
+	display: flex;
+	grid-area: ft;
+	margin: 0;
+	padding: 0.5rem;
+}
+
+.footer_para {
+	font-family: "Roboto", sans-serif;
+	color:whitesmoke;
+}
+
+
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	
+	
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+
+
+}
