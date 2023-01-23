@@ -6,22 +6,13 @@ a {
 	text-decoration: none;
 }
 
-a:active {
-	color: whitesmoke;
-}
 
-a:hover {
-	color: yellow;
-}
-
-a:visited {
-	color:darkslategrey;
-}
 
 .container {
 
 	display: grid;
-	width: 100%;	
+	width: 100%;
+		
 	grid-template-areas: 
 	"hd"
 	"nav"
@@ -32,9 +23,12 @@ a:visited {
 /* Header and nav */
 .header {
 	grid-area: hd;
+	background-color: black;
+	
 }
 .logo {
 	text-align: center;
+	margin-top: 10%;
 }
 .main_nav {
 	width: 100%;
@@ -61,14 +55,15 @@ a:visited {
 }
 .rounded-circle {
 	border-radius: 50%;
-	width: 50%;
+	width: 20%;
 	height: auto;
 }
 
 h1.main_heading {
 	font-family: 'Tangerine', serif;
-	font-size: 48px;
+	font-size: 4rem;
 	text-align: center;
+	color:#efefef;
 }
 
 
@@ -166,11 +161,21 @@ button.post_button {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	
-	
+	.content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px){
+	
+
+	.content {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
 
 
 }

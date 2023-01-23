@@ -6,8 +6,8 @@ form {
 	width: 30%;
 	/* Form outline */
 	padding: 1em;
-	border: 1px solid #ccc;
-	border-radius: 1em;
+	border: 1px solid #efefef;
+	border-radius: 25px;
 	color: #efefef;
   }
   
@@ -25,7 +25,7 @@ form {
 	/* Uniform size & alignment */
 	display: inline-block;
 	width: 90px;
-	text-align: right;
+	text-align: left;
   }
   
   input,
@@ -35,7 +35,7 @@ form {
 	font: 1em sans-serif;
   
 	/* Uniform text field size */
-	width: 300px;
+	width: 100%;
 	box-sizing: border-box;
   
 	/* Match form field borders */
@@ -58,11 +58,15 @@ form {
   
   .button {
 	/* Align buttons with the text fields */
-	padding-left: 90px; /* same size as the label elements */
+	
+	margin-top: 1rem;
   }
   
   button {
 	/* This extra margin represent roughly the same space as the space
 	   between the labels and their text fields */
 	margin-left: 0.5em;
+  }
+  .form_title {
+	margin-top: 1rem;
   }

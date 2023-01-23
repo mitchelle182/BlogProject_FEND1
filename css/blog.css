@@ -11,14 +11,19 @@
     "sb"
 	"ft";
 }
-
+.blogcontent {
+    grid-area: main;
+}
 .author_bar {
-    margin:1rem;
+    margin:2rem 1rem;
+    display: flex;
+    flex-direction: column;
 }
 .clear {
     clear: both;
 
 }
+
 .caption {
     text-align: center;
     font-style: italic;
@@ -34,38 +39,51 @@ display: inline;
 
 }
 
-
+.avatar_box {
+    margin: 1rem 0;
+}
 .avatar {
-    border-radius: 50%;
+    border-radius: 25 px;
     width: 5%;
-    height:auto;
-    float: left;
-    padding-right: 1rem;
+   
 }
 
 /* Post main content */
 
 .blogpost_box {
-   grid-area:main;
+ 
     padding: 1rem;
 }
 
-figure.blogpost_image {
-    margin: 1rem auto;
+figure.bp_img_box { 
+    display: block;
+    margin: 3rem 20%;
 }
 .blogpost_image {
     
     width: 100%;
     height: auto;
 }
+.post_subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+}
+.post_para {
+    line-height: 1.4em;
+    font-size: 1.2rem;
+}
 /* future posts */
+.future_posts_heading {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+}
 .more_posts {
     grid-area: sb;
 }
 .other_posts {
     border: 1px solid #666666;
     border-radius: 10px;
-    width: 50%;
+    width: 30%;
     padding: 1rem;
     margin: 1rem auto;
 }
@@ -73,17 +91,69 @@ figure.blogpost_image {
 
 .quote {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 3rem;
-    margin: 2rem 20%;
+    font-size: 2rem;
+    margin: 3rem 10%;
     text-align: center;
     font-weight: bold;
     font-style: italic;
 }
 .thumb_img {
-    width: 30%;
+    width: 100%;
     height: auto;
     margin: 1rem auto;
 }
 
 
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .blogcontainer {
+        display: grid;
+        width: 100%;
+        grid-template-areas: 
+        "hd" "hd"
+        "nav" "nav"
+        "main main"
+        "sb sb"
+        "ft ft"
+
+    }
+    .more_posts {
+        display:flex;
+        
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .blogcontainer {
+        display: grid;
+        width: 100%;
+       
+    }
+    .rounded-circle {
+        width: 25%;
+    }
+    .more_posts {
+        display:flex;
+        
+    }
+   
+
+}
+
+@media only screen and (min-width: 1200px){
+	.blogcontainer {
+        display: grid;
+        width: 100%;
+        
+    }
+    .more_posts {
+        display:flex;
+        
+    }
+    .rounded-circle {
+        width: 10%;
+    }
+
+
+}
